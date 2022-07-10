@@ -24,7 +24,10 @@ namespace Quinbay.DebugUI
 
         private void Update()
         {
-            if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
+            if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger) || 
+                OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger) ||
+                OVRInput.GetUp(OVRInput.Button.PrimaryIndexTrigger) ||
+                OVRInput.GetUp(OVRInput.Button.SecondaryIndexTrigger))
             {
                 ToggleUI();
             }
