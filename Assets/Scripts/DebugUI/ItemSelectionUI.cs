@@ -19,12 +19,12 @@ namespace Quinbay.DebugUI
         private void Start()
         {
             DrawDebugUI();
-            SetUI(true);
+            SetUI(false);
         }
 
         private void Update()
         {
-            if (OVRInput.GetDown(OVRInput.Button.Any))
+            if (OVRInput.GetDown(OVRInput.Button.Two))
             {
                 ToggleUI();
             }
