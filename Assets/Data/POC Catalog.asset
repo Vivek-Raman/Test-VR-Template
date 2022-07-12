@@ -13,8 +13,81 @@ MonoBehaviour:
   m_Name: POC Catalog
   m_EditorClassIdentifier: 
   catalog:
-  - name: Table
-    description: asdasd table big good buy pls
+  - name: Green Bed
+    description: A comfortable queen size bed with green sheets.
+    category: 2
+    prefab: {fileID: 5863994578045519271, guid: f1c8bc6d9e30a4da19b623b418b4fe3b,
+      type: 3}
+  - name: Blue Bed
+    description: A cozy queen size bed with blue blankets.
+    category: 2
+    prefab: {fileID: 4495498987585714159, guid: bd429a2ffd5ca451485c08fdd138071a,
+      type: 3}
+  - name: King Bed
+    description: A cozy king size bed with golden sheets.
+    category: 2
+    prefab: {fileID: 745582333714624161, guid: 26a921e54f51a40f88c5e745d198a45b, type: 3}
+  - name: Cabinet 1
+    description: A cabinet with ample storage for clothes or utensils.
+    category: 3
+    prefab: {fileID: 4664757867321714951, guid: ff7e6b92d69c94af9badcac989d2d586,
+      type: 3}
+  - name: Cabinet 2
+    description: A cabinet with storage for clothes and open racks for easy access
+      and showcase.
+    category: 3
+    prefab: {fileID: 4137061671348300299, guid: 73fb54efd01ae4e6c9782337da586e41,
+      type: 3}
+  - name: Cabinet 3
+    description: A simple cupboard to store general items.
+    category: 3
+    prefab: {fileID: 4518809861893458327, guid: c4247245a9dfd4e1cb4a891c20da1c94,
+      type: 3}
+  - name: Corner Sofa
+    description: A large corner sofa set to relax on.
     category: 1
-    prefab: {fileID: 4204341440581038971, guid: 4627b2a83b3c44d48a04acb5b26502ea,
+    prefab: {fileID: 4308066422932944445, guid: f2cd6415419234f438f91dc5fd3daffb,
+      type: 3}
+  - name: Blue 3 Sofa
+    description: A 3 seater sofa set with blue covers.
+    category: 1
+    prefab: {fileID: 4251314942873657092, guid: a18161d7d59f74fbb9e2d46701a017c4,
+      type: 3}
+  - name: Blue 2 Sofa
+    description: A 2 seater sofa set with blue covers.
+    category: 1
+    prefab: {fileID: 3429116075471395408, guid: 37e911d62dedb4bc68a1d6a6befc5f92,
+      type: 3}
+  - name: Gold 2 Sofa
+    description: A 2 seater sofa set with gold covers.
+    category: 1
+    prefab: {fileID: 2009308202149329975, guid: e1c5944f2218247018ec75eb49604192,
+      type: 3}
+  - name: Gold 1 Sofa
+    description: A single seater sofa set with gold covers.
+    category: 1
+    prefab: {fileID: 717109577019936496, guid: 112a06219687542d7acf32f93ecfec16, type: 3}
+  - name: 3x4 Rack
+    description: A rack with 3x4 slots
+    category: 3
+    prefab: {fileID: 7763960118116809522, guid: 6ccd13764914c43b0ae2d57373a93cf8,
+      type: 3}
+  - name: 2x4 Rack
+    description: A rack with 2x4 slots
+    category: 3
+    prefab: {fileID: 1686064290547437758, guid: 813fa2324fb5b4f2a914ac3008d06bad,
+      type: 3}
+  - name: 1x4 Rack
+    description: A rack with 1x4 slots
+    category: 3
+    prefab: {fileID: 987574156380533124, guid: 41f85ff904fb444de885f4a29e07f854, type: 3}
+  - name: 2x3 Rack
+    description: A rack with 2x3 slots
+    category: 3
+    prefab: {fileID: 8246038166900220461, guid: 6fded214f9ae84f5a90445df518a5fd6,
+      type: 3}
+  - name: 2x2 Rack
+    description: A rack with 2x2 slots
+    category: 3
+    prefab: {fileID: 1808314527258611366, guid: 664ea29df6b5b4d23843af986090750c,
       type: 3}
