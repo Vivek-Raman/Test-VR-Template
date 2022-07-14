@@ -69,10 +69,12 @@ namespace Quinbay.DebugUI
         }
 
 #if UNITY_EDITOR
+        private int debugIndex = 0;
+        
         [ContextMenu(nameof(Debug_SelectAnItem))]
         private void Debug_SelectAnItem()
         {
-            SelectItem(catalogObject.Catalog[0], true);
+            SelectItem(catalogObject.Catalog[debugIndex++ % catalogObject.Catalog.Count], true);
         }
 #endif
     }
