@@ -67,5 +67,13 @@ namespace Quinbay.DebugUI
         {
             SetUI(!isUIVisible);
         }
+
+#if UNITY_EDITOR
+        [ContextMenu(nameof(Debug_SelectAnItem))]
+        private void Debug_SelectAnItem()
+        {
+            SelectItem(catalogObject.Catalog[0], true);
+        }
+#endif
     }
 }
