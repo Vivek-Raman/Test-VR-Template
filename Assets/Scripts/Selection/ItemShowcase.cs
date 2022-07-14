@@ -28,7 +28,8 @@ namespace Quinbay.Selection
                 Destroy(toDelete);
             }
 
-            currentItemOnDisplay = Instantiate(item.Prefab, transform.position, transform.rotation, transform);
+            currentItemOnDisplay =
+                Instantiate(item.Prefab, transform.position, item.Prefab.transform.rotation, transform);
         }
     }
 }
