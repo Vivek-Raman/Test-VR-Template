@@ -16,6 +16,7 @@ namespace Quinbay.UI
         [SerializeField] private TMP_Text titleText;
         [SerializeField] private TMP_Text categoryText;
         [SerializeField] private TMP_Text descriptionText;
+        [SerializeField] private TMP_Text pricePerUnitText;
 
         private CatalogItem selectedItem = null;
 
@@ -44,6 +45,7 @@ namespace Quinbay.UI
             titleText.text = newItem.Name;
             categoryText.text = newItem.Category.ToString();
             descriptionText.text = newItem.Description;
+            pricePerUnitText.text = $"Price: INR {newItem.PricePerUnit.ToString()} per Unit";
 
             selectedItem = newItem;
         }
