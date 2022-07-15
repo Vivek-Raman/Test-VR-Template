@@ -126,17 +126,27 @@ PrefabInstance:
     - target: {fileID: 2548240825903740085, guid: 6e8822cc61af543a1a4bf0e7a9529e6e,
         type: 3}
       propertyPath: m_Range
-      value: 4.29
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2548240825903740085, guid: 6e8822cc61af543a1a4bf0e7a9529e6e,
         type: 3}
       propertyPath: m_Intensity
-      value: 1.32
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2548240825903740085, guid: 6e8822cc61af543a1a4bf0e7a9529e6e,
+        type: 3}
+      propertyPath: m_SpotAngle
+      value: 121.8
       objectReference: {fileID: 0}
     - target: {fileID: 2548240825903740085, guid: 6e8822cc61af543a1a4bf0e7a9529e6e,
         type: 3}
       propertyPath: m_Lightmapping
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2548240825903740085, guid: 6e8822cc61af543a1a4bf0e7a9529e6e,
+        type: 3}
+      propertyPath: m_ShadowRadius
+      value: 1.75
       objectReference: {fileID: 0}
     - target: {fileID: 6728254526340505713, guid: 6e8822cc61af543a1a4bf0e7a9529e6e,
         type: 3}

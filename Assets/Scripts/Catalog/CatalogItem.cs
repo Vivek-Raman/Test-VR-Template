@@ -10,10 +10,12 @@ namespace Quinbay.Catalog
         [SerializeField] private string description;
         [SerializeField] private CategoryType category;
         [SerializeField] private GameObject prefab;
+        [SerializeField] private float pricePerUnit;
         
         public string Name => name;
         public string Description => description;
         public CategoryType Category => category;
         public GameObject Prefab => prefab;
+        public float PricePerUnit => pricePerUnit;
     }
 }

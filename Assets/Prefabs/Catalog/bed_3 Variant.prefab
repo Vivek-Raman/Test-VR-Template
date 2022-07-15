@@ -12,6 +12,10 @@ PrefabInstance:
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: b3cad47395084a24ab9316d8de9eba94, type: 3}
+      propertyPath: m_Name
+      value: bed_3 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: b3cad47395084a24ab9316d8de9eba94, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -53,19 +57,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b3cad47395084a24ab9316d8de9eba94, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b3cad47395084a24ab9316d8de9eba94, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071068
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b3cad47395084a24ab9316d8de9eba94, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b3cad47395084a24ab9316d8de9eba94, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: b3cad47395084a24ab9316d8de9eba94, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: b3cad47395084a24ab9316d8de9eba94, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: b3cad47395084a24ab9316d8de9eba94, type: 3}
       propertyPath: m_LightmapIndex

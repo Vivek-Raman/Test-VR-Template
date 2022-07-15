@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using Quinbay.Catalog;
 using Quinbay.Selection;
@@ -32,15 +31,32 @@ namespace Quinbay.DebugUI
 
         private void DrawDebugUI()
         {
-            List<CatalogItem> catalog = catalogObject.Catalog;
-            foreach (CatalogItem item in catalog)
-            {
-                DebugUIBuilder.instance.AddRadio(item.Name, "itemSelection", (t) =>
-                {
-                    SelectItem(item, t.isOn);
-                    SetUI(false);
-                });
-            }
+             Dictionary<CategoryType, List<CatalogItem>> groupedCatalog = catalogObject.GroupedCatalog;
+
+             foreach (CatalogItem item in groupedCatalog[CategoryType.Beds])
+             {
+                 DebugUIBuilder.instance.AddRadio(item.Name, "itemSelection", (t) =>
+                 {
+                     SelectItem(item, t.isOn);
+                     SetUI(false);
+                 }, DebugUIBuilder.DEBUG_PANE_LEFT);
+             }
+             foreach (CatalogItem item in groupedCatalog[CategoryType.Storage])
+             {
+                 DebugUIBuilder.instance.AddRadio(item.Name, "itemSelection", (t) =>
+                 {
+                     SelectItem(item, t.isOn);
+                     SetUI(false);
+                 }, DebugUIBuilder.DEBUG_PANE_CENTER);
+             }
+             foreach (CatalogItem item in groupedCatalog[CategoryType.Sofas])
+             {
+                 DebugUIBuilder.instance.AddRadio(item.Name, "itemSelection", (t) =>
+                 {
+                     SelectItem(item, t.isOn);
+                     SetUI(false);
+                 }, DebugUIBuilder.DEBUG_PANE_RIGHT);
+             }
         }
 
         private void SelectItem(CatalogItem item, bool isSelected)
@@ -67,5 +83,21 @@ namespace Quinbay.DebugUI
         {
             SetUI(!isUIVisible);
         }
+
+#if UNITY_EDITOR
+        private int debugIndex = 0;
+        
+        [ContextMenu(nameof(Debug_SelectAnItem))]
+        private void Debug_SelectAnItem()
+        {
+            SelectItem(catalogObject.Catalog[debugIndex++ % catalogObject.Catalog.Count], true);
+        }
+        
+        [ContextMenu(nameof(Debug_ShowGroupedCatalog))]
+        private void Debug_ShowGroupedCatalog()
+        {
+            Debug.Log(catalogObject.GroupedCatalog);
+        }
+#endif
     }
 }

@@ -6,6 +6,5 @@ namespace Quinbay.Catalog
         Sofas,
         Beds,
         Storage,
-        Furniture,
     }
 }
