@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using Quinbay.Catalog;
 using Quinbay.Selection;
@@ -32,15 +31,32 @@ namespace Quinbay.DebugUI
 
         private void DrawDebugUI()
         {
-            List<CatalogItem> catalog = catalogObject.Catalog;
-            foreach (CatalogItem item in catalog)
-            {
-                DebugUIBuilder.instance.AddRadio(item.Name, "itemSelection", (t) =>
-                {
-                    SelectItem(item, t.isOn);
-                    SetUI(false);
-                });
-            }
+             Dictionary<CategoryType, List<CatalogItem>> groupedCatalog = catalogObject.GroupedCatalog;
+
+             foreach (CatalogItem item in groupedCatalog[CategoryType.Beds])
+             {
+                 DebugUIBuilder.instance.AddRadio(item.Name, "itemSelection", (t) =>
+                 {
+                     SelectItem(item, t.isOn);
+                     SetUI(false);
+                 }, DebugUIBuilder.DEBUG_PANE_LEFT);
+             }
+             foreach (CatalogItem item in groupedCatalog[CategoryType.Storage])
+             {
+                 DebugUIBuilder.instance.AddRadio(item.Name, "itemSelection", (t) =>
+                 {
+                     SelectItem(item, t.isOn);
+                     SetUI(false);
+                 }, DebugUIBuilder.DEBUG_PANE_CENTER);
+             }
+             foreach (CatalogItem item in groupedCatalog[CategoryType.Sofas])
+             {
+                 DebugUIBuilder.instance.AddRadio(item.Name, "itemSelection", (t) =>
+                 {
+                     SelectItem(item, t.isOn);
+                     SetUI(false);
+                 }, DebugUIBuilder.DEBUG_PANE_RIGHT);
+             }
         }
 
         private void SelectItem(CatalogItem item, bool isSelected)
