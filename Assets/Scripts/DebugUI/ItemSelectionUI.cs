@@ -92,6 +92,12 @@ namespace Quinbay.DebugUI
         {
             SelectItem(catalogObject.Catalog[debugIndex++ % catalogObject.Catalog.Count], true);
         }
+        
+        [ContextMenu(nameof(Debug_ShowGroupedCatalog))]
+        private void Debug_ShowGroupedCatalog()
+        {
+            Debug.Log(catalogObject.GroupedCatalog);
+        }
 #endif
     }
 }
